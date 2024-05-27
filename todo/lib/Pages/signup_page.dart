@@ -178,7 +178,7 @@ class _SignupPageState extends State<SignupPage> {
         showSuccess();
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => HomePage_sign()),
         );
       } else {
         showError(response.error!.message);
@@ -186,7 +186,7 @@ class _SignupPageState extends State<SignupPage> {
  }
 }
 
-class HomePage extends StatelessWidget {
+class HomePage_sign extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
